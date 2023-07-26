@@ -1,3 +1,15 @@
+"""
+This was my second attempt at my first attempt at creating the scheduling algorithm. No real prior research had been completed at this stage
+and I had 2 options as far as solutions went, option 1 was to hard-code all of the rules and actions needed to create the 
+program and option 2 was to used graph coloring and ignore room capacity. 
+
+Code below is for an object oriented programmed version 1, which was also very bad choice. Stopped working on option one when I realized his was not a feasable solution. 
+
+Code was written during summer break
+part 2: 2023, July, 27-30
+"""
+
+
 import random
 
 class student:
