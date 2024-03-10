@@ -1,4 +1,4 @@
-###### Overview of Problem & Solution
+## Overview of Problem & Solution
 
 
 ----------------------------------------FORMALIZING THE PROBLEM----------------------------------------
