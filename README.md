@@ -1,14 +1,15 @@
-###How the solution works
+###hello###
 
 ----------------------------------------FORMALIZING THE PROBLEM----------------------------------------
 
 First some things need to be defined:
-    C = {c_1, c_2, c_3, ..., c_q}; c_1 could be for example 'french b'
-        each course c_i has l_i lectures per week and s_i students
-    C -> list of all the classes
-    q -> total number of classes
-        each class gets assigned a number
-        'french b' could be assigned number 1
+
+C = {c_1, c_2, c_3, ..., c_q}; c_1 could be for example 'french b'
+    each course c_i has l_i lectures per week and s_i students
+C -> list of all the classes
+q -> total number of classes
+    each class gets assigned a number
+    'french b' could be assigned number 1
 
 
     P = {1, 2, 3, ..., p}
