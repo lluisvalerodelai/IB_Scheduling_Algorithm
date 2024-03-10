@@ -1,28 +1,28 @@
 ## Overview of Problem & Solution
 
 
-----------------------------------------FORMALIZING THE PROBLEM----------------------------------------
+# ---------------------------------------- FORMALIZING THE PROBLEM ----------------------------------------
 
-First some things need to be defined:
+First some things need to be defined:   
+  
+C = {c_1, c_2, c_3, ..., c_q}; c_1 could be for example 'french b'  
+    each course c_i has l_i lectures per week and s_i students  
+C -> list of all the classes  
+q -> total number of classes    
+    each class gets assigned a number  
+    'french b' could be assigned number 1  
 
-C = {c_1, c_2, c_3, ..., c_q}; c_1 could be for example 'french b'
-    each course c_i has l_i lectures per week and s_i students
-C -> list of all the classes
-q -> total number of classes
-    each class gets assigned a number
-    'french b' could be assigned number 1
 
+P = {1, 2, 3, ..., p}
+where p is the number of periods in a week,
+there are 4 available weekdays, each with 6 available time slots for classes to be had
+so total of number of time periods for ish is 6 x 4 = 24. 
+p = 24
 
-    P = {1, 2, 3, ..., p}
-    where p is the number of periods in a week,
-    there are 4 available weekdays, each with 6 available time slots for classes to be had
-    so total of number of time periods for ish is 6 x 4 = 24. 
-    p = 24
-
-    Same for rooms, 
-    R = {r_1, r_2, r_3, ..., r_m} 
-    where m is the total number of rooms
-    each room has a property which is the total number of students it can hold
+Same for rooms, 
+R = {r_1, r_2, r_3, ..., r_m} 
+where m is the total number of rooms
+each room has a property which is the total number of students it can hold
 
 The solution is of the form of a qxp matrix T (for timetable)
     where t_ik = j, where j is between 1-m (number of rooms)
