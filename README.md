@@ -1,7 +1,7 @@
 ## Overview of Problem & Solution
 
 
-# ------------------ FORMALIZING THE PROBLEM ------------------
+# ------------- FORMALIZING THE PROBLEM -------------
 
 First some things need to be defined:   
   
