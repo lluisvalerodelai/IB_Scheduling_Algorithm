@@ -49,13 +49,13 @@ So the program is going to search for the matrix T such that the following const
 
 
 ----------------------------------------BASIC LOCAL ENTITIES----------------------------------------
-=> basically the minimum things that are needed to be able to have a search function which finds possible timetables 
+&rarr; basically the minimum things that are needed to be able to have a search function which finds possible timetables 
 
-Search Space
-    The search space is all the timetable matrices T for which the 'number of classes' and 'availabilities' contraints hold
-    States for which the room occupancy and conflicts contraints do not hold are allowed but must be significantly penalized
+&rarr;Search Space
+    The search space is all the timetable matrices T for which the 'number of classes' and 'availabilities' contraints hold \
+    States for which the room occupancy and conflicts contraints do not hold are allowed but must be significantly penalized \
 
-Cost function
+&rarr;Cost function
     the cost function is a sum of the measure of violation of all constraints
     the hard constraints which can be violated (room occupancy and conflicts) are significantly penalized (say a score of 1000)
     soft constraints are penalized relative to their importance
@@ -63,7 +63,7 @@ Cost function
 if the measure of violation of contraint i if f_i(T) and the cost function is denoted F(T) where T is a given timetable then 
     F(T) = 1000(f_2(T) + f_3(T)) + f_4(T) + f_5(T) + f_6(T)
 
-Strategy for generating inital solution
+&rarr;Strategy for generating inital solution
 
 The intial solution is generated at random
     -start with the first class, for each of its classes per week assign it a random period and a random room following the AM matrix (no courses are where teachers cant teach)
