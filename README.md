@@ -53,14 +53,14 @@ So the program is going to search for the matrix T such that the following const
 
 &rarr;Search Space
     The search space is all the timetable matrices T for which the 'number of classes' and 'availabilities' contraints hold \
-    States for which the room occupancy and conflicts contraints do not hold are allowed but must be significantly penalized \
+    States for which the room occupancy and conflicts contraints do not hold are allowed but must be significantly penalized 
 
 &rarr;Cost function
-    the cost function is a sum of the measure of violation of all constraints
-    the hard constraints which can be violated (room occupancy and conflicts) are significantly penalized (say a score of 1000)
+    the cost function is a sum of the measure of violation of all constraints \
+    the hard constraints which can be violated (room occupancy and conflicts) are significantly penalized (say a score of 1000) \
     soft constraints are penalized relative to their importance
 
-if the measure of violation of contraint i if f_i(T) and the cost function is denoted F(T) where T is a given timetable then 
+if the measure of violation of contraint i if f_i(T) and the cost function is denoted F(T) where T is a given timetable then \
     F(T) = 1000(f_2(T) + f_3(T)) + f_4(T) + f_5(T) + f_6(T)
 
 &rarr;Strategy for generating inital solution
