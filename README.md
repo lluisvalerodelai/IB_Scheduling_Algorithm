@@ -19,23 +19,23 @@ there are 4 available weekdays, each with 6 available time slots for classes to 
 so total of number of time periods for ish is 6 x 4 = 24. 
 p = 24
 
-Same for rooms, 
-R = {r_1, r_2, r_3, ..., r_m} 
-where m is the total number of rooms
-each room has a property which is the total number of students it can hold
+Same for rooms,  
+R = {r_1, r_2, r_3, ..., r_m}  
+where m is the total number of rooms 
+each room has a property which is the total number of students it can hold 
 
-The solution is of the form of a qxp matrix T (for timetable)
-    where t_ik = j, where j is between 1-m (number of rooms)
-    t_ik = j => course c_i has class during period k in room r_j
-        so the row number (i) is the class, and the column (j) number is the period, then the value of the matrix at that (row,column) is the room it will be held in
-    
-So the program is going to search for the matrix T such that the following constraints are satisfied
-    1. Number of classes (hard constraint)
-        the number of classes per week of c_i must be l_i (where L is a list and l_i is the number of classes per week of c_i)
-    2. room occupancy (hard constraint)
-        no 2 classes can happen in the same room at the same time 
-        this means no row (aka period number) can have the same number repeated
-    3. Conflicts (hard constraint)
+The solution is of the form of a qxp matrix T (for timetable) 
+    where t_ik = j, where j is between 1-m (number of rooms) 
+    t_ik = j => course c_i has class during period k in room r_j 
+        so the row number (i) is the class, and the column (j) number is the period, then the value of the matrix at that (row,column) is the room it will be held in 
+     
+So the program is going to search for the matrix T such that the following constraints are satisfied 
+    1. Number of classes (hard constraint) 
+        the number of classes per week of c_i must be l_i (where L is a list and l_i is the number of classes per week of c_i) 
+    2. room occupancy (hard constraint) 
+        no 2 classes can happen in the same room at the same time  
+        this means no row (aka period number) can have the same number repeated 
+    3. Conflicts (hard constraint) 
         classes that share students cannot be held at the same time, and classes taught by the same teacher cannot happen at the same time
         define a conflict matric CM of size qxq where cm_iq = 1 if c_i and q_i share a student or teacher and zero is otherwise
     4. Availabilities (hard constraint)
