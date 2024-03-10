@@ -48,7 +48,7 @@ So the program is going to search for the matrix T such that the following const
         each class must not be held more than once in the same day
 
 
-----------------------------------------BASIC LOCAL ENTITIES----------------------------------------
+# ------------------ Basic Local Entities ------------------
 &rarr; basically the minimum things that are needed to be able to have a search function which finds possible timetables 
 
 &rarr;Search Space
