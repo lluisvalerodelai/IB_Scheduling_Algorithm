@@ -1,5 +1,5 @@
 ## Overview of Problem & Solution
-
+####SAD NEWS: I lost the code file when I switched laptops and forgot to back it up :( 
 
 # ------------- FORMALIZING THE PROBLEM -------------
 
@@ -68,7 +68,10 @@ if the measure of violation of contraint i if f_i(T) and the cost function is de
 The intial solution is generated at random
     -start with the first class, for each of its classes per week assign it a random period and a random room following the AM matrix (no courses are where teachers cant teach)
     -the intial solution and any solution at a given time point must always satisfy constraints 1 and 4
+Then run some combination of some tree search algorithm where each node is a schedule state and each subsequent node is a schedule after taking an "action" 
+    -Where an action can be moving the time, period, room, etc of a class
 
+----Given the large search space, using a regular tree search algorithm is kinda useless, so in the future my idea is to implement a search method similiar to that of Alpha-Go
 
 
 
